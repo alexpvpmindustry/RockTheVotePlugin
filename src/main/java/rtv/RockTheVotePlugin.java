@@ -51,7 +51,7 @@ public class RockTheVotePlugin extends Plugin {
             int cur = this.votes.size();
             int req = (int) Math.ceil(ratio * Groups.player.size());
             Call.sendMessage("RTV: [accent]" + player.name + "[] wants to change the map, [green]" + cur +
-                "[] votes, [green]" + req + "[] required");
+                "[] votes, [green]" + req + "[] required. (type /rtv to vote)");
 
             if (cur < req) {
                 return;
